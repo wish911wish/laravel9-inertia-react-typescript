@@ -1,11 +1,11 @@
 up:
-	docker-compose up -d
+	docker compose up -d
 down:
-	docker-compose down --remove-orphans
+	docker compose down --remove-orphans
 web:
-	docker-compose exec web ash
+	docker compose exec web ash
 app:
-	docker-compose exec app bash
+	docker compose exec app bash
 db:
 	docker compose exec db bash
 migrate:
